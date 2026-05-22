@@ -84,7 +84,7 @@ export function DeveloperPage({ onBack }: DeveloperPageProps) {
               <Code2 className="w-10 h-10 md:w-12 md:h-12 text-blue-500" />
             </motion.div>
             <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-1">
-              Portal Dev Team
+              Bhavya Sharma
             </h3>
             <p className="text-xs md:text-sm text-gray-500 mb-4">
               Full-Stack Developer & UI Engineer
@@ -93,6 +93,71 @@ export function DeveloperPage({ onBack }: DeveloperPageProps) {
               Building secure, modern, and delightful web experiences with
               cutting-edge technologies and thoughtful design.
             </p>
+          </motion.div>
+
+          {/* Contact Links */}
+          <motion.div
+            className="w-full mb-5 md:mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <h4 className="text-xs md:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3 md:mb-4 px-1">
+              Connect
+            </h4>
+            <div className="space-y-2 md:space-y-3">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 hover:bg-white/40 transition-all duration-300 group"
+              >
+                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-gray-500/10 flex items-center justify-center group-hover:bg-gray-500/20 transition-colors">
+                  <GitBranch className="w-4 h-4 md:w-5 md:h-5 text-gray-600" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs md:text-sm font-medium text-gray-800">GitHub</p>
+                  <p className="text-[10px] md:text-xs text-gray-500 truncate">
+                    github.com/the-og-dev
+                  </p>
+                </div>
+                <span className="text-gray-400 text-xs md:text-sm">&rarr;</span>
+              </a>
+
+              <a
+                href="mailto:bhavthedev@proton.me"
+                className="glass-card rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 hover:bg-white/40 transition-all duration-300 group"
+              >
+                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-red-500/10 flex items-center justify-center group-hover:bg-red-500/20 transition-colors">
+                  <Mail className="w-4 h-4 md:w-5 md:h-5 text-red-500" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs md:text-sm font-medium text-gray-800">Email</p>
+                  <p className="text-[10px] md:text-xs text-gray-500 truncate">
+                    bhavthedev@proton.me
+                  </p>
+                </div>
+                <span className="text-gray-400 text-xs md:text-sm">&rarr;</span>
+              </a>
+
+              <a
+                href="https://bhavya-dev.pages.dev/"
+                target="https://bhavya-dev.pages.dev/"
+                rel="noopener noreferrer"
+                className="glass-card rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 hover:bg-white/40 transition-all duration-300 group"
+              >
+                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
+                  <Globe className="w-4 h-4 md:w-5 md:h-5 text-emerald-500" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs md:text-sm font-medium text-gray-800">Website</p>
+                  <p className="text-[10px] md:text-xs text-gray-500 truncate">
+                    bhavya-dev.pages.dev
+                  </p>
+                </div>
+                <span className="text-gray-400 text-xs md:text-sm">&rarr;</span>
+              </a>
+            </div>
           </motion.div>
 
           {/* Tech Stack */}
@@ -130,71 +195,6 @@ export function DeveloperPage({ onBack }: DeveloperPageProps) {
             </div>
           </motion.div>
 
-          {/* Contact Links */}
-          <motion.div
-            className="w-full mb-5 md:mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            <h4 className="text-xs md:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3 md:mb-4 px-1">
-              Connect
-            </h4>
-            <div className="space-y-2 md:space-y-3">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 hover:bg-white/40 transition-all duration-300 group"
-              >
-                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-gray-500/10 flex items-center justify-center group-hover:bg-gray-500/20 transition-colors">
-                  <GitBranch className="w-4 h-4 md:w-5 md:h-5 text-gray-600" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs md:text-sm font-medium text-gray-800">GitHub</p>
-                  <p className="text-[10px] md:text-xs text-gray-500 truncate">
-                    github.com/portal-dev-team
-                  </p>
-                </div>
-                <span className="text-gray-400 text-xs md:text-sm">&rarr;</span>
-              </a>
-
-              <a
-                href="mailto:dev@secureportal.com"
-                className="glass-card rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 hover:bg-white/40 transition-all duration-300 group"
-              >
-                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-red-500/10 flex items-center justify-center group-hover:bg-red-500/20 transition-colors">
-                  <Mail className="w-4 h-4 md:w-5 md:h-5 text-red-500" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs md:text-sm font-medium text-gray-800">Email</p>
-                  <p className="text-[10px] md:text-xs text-gray-500 truncate">
-                    dev@secureportal.com
-                  </p>
-                </div>
-                <span className="text-gray-400 text-xs md:text-sm">&rarr;</span>
-              </a>
-
-              <a
-                href="https://secureportal.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 hover:bg-white/40 transition-all duration-300 group"
-              >
-                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
-                  <Globe className="w-4 h-4 md:w-5 md:h-5 text-emerald-500" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs md:text-sm font-medium text-gray-800">Website</p>
-                  <p className="text-[10px] md:text-xs text-gray-500 truncate">
-                    secureportal.com
-                  </p>
-                </div>
-                <span className="text-gray-400 text-xs md:text-sm">&rarr;</span>
-              </a>
-            </div>
-          </motion.div>
-
           {/* About this Project */}
           <motion.div
             className="glass-card rounded-2xl md:rounded-3xl p-5 md:p-6 w-full"
@@ -209,11 +209,17 @@ export function DeveloperPage({ onBack }: DeveloperPageProps) {
               </h4>
             </div>
             <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
-              Secure Portal is a protected document management system built with
+              A secure document management platform that allows users to upload,
+              access, and download files directly from cloud drive storage through
+              integrated APIs. The system includes protected user authentication,
+              controlled document access, seamless file handling, and a clean web
+              interface designed for fast, reliable, and secure document sharing.
+                  <br></br>
+                  This Portal is a protected document management system built with
               modern web technologies. It features glassmorphism UI design, session
               management, custom PDF rendering, multi-select downloads, drag-and-drop
               uploads, and real-time authentication — all wrapped in a smooth,
-              animated user experience.
+              animated user experience. 
             </p>
             <div className="mt-3 md:mt-4 flex items-center gap-1.5 text-[10px] md:text-xs text-gray-400">
               <Heart className="w-3 h-3 text-rose-400" />

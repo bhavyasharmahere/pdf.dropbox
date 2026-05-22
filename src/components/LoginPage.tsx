@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shield, User, Phone, ArrowRight, Loader2 } from "lucide-react";
+import { Shield, User, CaseSensitive, Phone, ArrowRight, Loader2 } from "lucide-react";
 import { authenticateUser } from "../data/mockData";
 import { SuccessAnimation } from "./SuccessAnimation";
 import { ErrorAnimation } from "./ErrorAnimation";
@@ -70,10 +70,10 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
             <Shield className="w-5 h-5 md:w-6 md:h-6 text-blue-500" />
           </div>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">
-            Secure Portal
+            PDF Portal
           </h1>
         </div>
-        <p className="text-gray-500 text-xs md:text-sm">Protected Document Management System</p>
+        <p className="text-gray-500 text-xs md:text-sm">Portable Document Format File Management System</p>
       </motion.div>
 
       {/* Login Card */}
@@ -94,13 +94,13 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
                 transition={{ duration: 0.3 }}
               >
                 <h2 className="text-xl font-semibold text-gray-800 mb-6 text-center">
-                  Sign In
+                  Verify & Continue
                 </h2>
 
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-600 mb-1.5 ml-1">
-                      Name
+                      Registered Name
                     </label>
                     <div className="relative">
                       <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -108,7 +108,7 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder="Enter your name"
+                        placeholder="Enter your first name i.e. Riddhi"
                         className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-gray-800 placeholder:text-gray-400 text-sm"
                         required
                       />
@@ -117,15 +117,15 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-600 mb-1.5 ml-1">
-                      Surname
+                      Registered Surname
                     </label>
                     <div className="relative">
-                      <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                      <CaseSensitive className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                       <input
                         type="text"
                         value={surname}
                         onChange={(e) => setSurname(e.target.value)}
-                        placeholder="Enter your surname"
+                        placeholder="Enter your surname i.e. Kashyap"
                         className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-gray-800 placeholder:text-gray-400 text-sm"
                         required
                       />
@@ -134,7 +134,7 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-600 mb-1.5 ml-1">
-                      Phone Number
+                      Registered Contact Number
                     </label>
                     <div className="relative">
                       <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -142,7 +142,7 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
                         type="tel"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
-                        placeholder="+1 555-0100"
+                        placeholder="+1 2484345508"
                         className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-gray-800 placeholder:text-gray-400 text-sm"
                         required
                       />
@@ -162,7 +162,7 @@ export function LoginPage({ onLogin, onDeveloperClick }: LoginPageProps) {
                     </>
                   ) : (
                     <>
-                      Sign In
+                      Verify Again
                       <ArrowRight className="w-4 h-4" />
                     </>
                   )}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Eye, Upload, LogOut, Clock, Shield } from "lucide-react";
+import { CloudSync, CloudUpload, LogOut, ClockFading, Shield } from "lucide-react";
 import { Footer } from "./Footer";
 
 interface DashboardProps {
@@ -39,14 +39,14 @@ export function Dashboard({ onView, onUpload, onLogout, timeRemaining, onDevelop
             <Shield className="w-4 h-4 md:w-5 md:h-5 text-blue-500" />
           </div>
           <div>
-            <h1 className="text-lg md:text-xl font-bold text-gray-800">Secure Portal</h1>
+            <h1 className="text-lg md:text-xl font-bold text-gray-800">PDF Portal</h1>
             <p className="text-[10px] md:text-xs text-gray-500">Dashboard</p>
           </div>
         </div>
 
         <div className="flex items-center gap-2 md:gap-4">
           <div className="glass-card rounded-xl px-2.5 md:px-4 py-1.5 md:py-2 flex items-center gap-1.5 md:gap-2">
-            <Clock className="w-3.5 h-3.5 md:w-4 md:h-4 text-gray-500" />
+            <ClockFading className="w-3.5 h-3.5 md:w-4 md:h-4 text-gray-500" />
             <span className="text-xs md:text-sm font-medium text-gray-600 tabular-nums">
               {timeRemaining}
             </span>
@@ -54,7 +54,7 @@ export function Dashboard({ onView, onUpload, onLogout, timeRemaining, onDevelop
           <button
             onClick={onLogout}
             className="glass-button rounded-xl p-2 md:p-2.5 text-gray-600 hover:text-red-500 transition-colors"
-            title="Logout"
+            title="Fuck Off"
           >
             <LogOut className="w-3.5 h-3.5 md:w-4 md:h-4" />
           </button>
@@ -73,14 +73,14 @@ export function Dashboard({ onView, onUpload, onLogout, timeRemaining, onDevelop
           whileTap={{ scale: 0.98 }}
         >
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-4 md:mb-5 group-hover:bg-blue-500/20 transition-colors duration-300">
-            <Eye className="w-6 h-6 md:w-8 md:h-8 text-blue-500" />
+            <CloudSync className="w-6 h-6 md:w-8 md:h-8 text-blue-500" />
           </div>
           <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-1.5 md:mb-2">View Documents</h3>
           <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
-            Browse and access PDF documents stored in your secure cloud storage.
+            Browse, access & download PDF documents stored in secure storage.
           </p>
           <div className="mt-3 md:mt-5 flex items-center gap-2 text-blue-500 text-xs md:text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span>Explore Files</span>
+            <span>Explore PDFs</span>
             <motion.span
               animate={{ x: [0, 4, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
@@ -100,11 +100,11 @@ export function Dashboard({ onView, onUpload, onLogout, timeRemaining, onDevelop
           whileTap={{ scale: 0.98 }}
         >
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-4 md:mb-5 group-hover:bg-emerald-500/20 transition-colors duration-300">
-            <Upload className="w-6 h-6 md:w-8 md:h-8 text-emerald-500" />
+            <CloudUpload className="w-6 h-6 md:w-8 md:h-8 text-emerald-500" />
           </div>
           <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-1.5 md:mb-2">Upload Files</h3>
           <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
-            Securely upload new PDF documents to your cloud storage with verification.
+            Upload your PDF documents to cloud storage for sharing it with developer.
           </p>
           <div className="mt-3 md:mt-5 flex items-center gap-2 text-emerald-500 text-xs md:text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span>Start Upload</span>

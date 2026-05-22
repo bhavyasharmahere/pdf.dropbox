@@ -2,7 +2,7 @@ import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowLeft,
-  Upload,
+  CloudSync,
   FileText,
   X,
   CheckCircle2,
@@ -230,7 +230,7 @@ export function UploadPage({ onBack, onDeveloperClick }: UploadPageProps) {
                     transition={{ duration: 0.2 }}
                   >
                     <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center mx-auto mb-3 md:mb-4">
-                      <Upload className="w-6 h-6 md:w-8 md:h-8 text-blue-500" />
+                      <CloudSync className="w-6 h-6 md:w-8 md:h-8 text-blue-500" />
                     </div>
                     <p className="text-xs md:text-sm font-medium text-gray-700 mb-1">
                       {isDragging ? "Drop your file here" : "Click or drag & drop"}
@@ -333,7 +333,7 @@ export function UploadPage({ onBack, onDeveloperClick }: UploadPageProps) {
                         disabled={uploadStatus === "error"}
                         className="flex-1 py-2.5 md:py-3 px-3 md:px-4 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-medium text-xs md:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 md:gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/25"
                       >
-                        <Upload className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                        <CloudSync className="w-3.5 h-3.5 md:w-4 md:h-4" />
                         Upload File
                       </button>
                     </div>

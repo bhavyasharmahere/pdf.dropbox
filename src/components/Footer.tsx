@@ -15,7 +15,7 @@ export function Footer({ onDeveloperClick }: FooterProps) {
     >
       <div className="flex flex-col items-center gap-1 md:gap-1.5">
         <p className="text-[10px] md:text-[11px] text-gray-400 tracking-wide">
-          &copy; {new Date().getFullYear()} Secure Portal. All rights reserved.
+          &copy; {new Date().getFullYear()} Pdf Portal. All rights reserved.
         </p>
         <button
           onClick={onDeveloperClick}
@@ -23,7 +23,7 @@ export function Footer({ onDeveloperClick }: FooterProps) {
         >
           <span>Developed by</span>
           <span className="font-medium text-gray-500 group-hover:text-blue-500 transition-colors">
-            Portal Dev Team
+            Bhavya Sharma
           </span>
           <Code2 className="w-2.5 h-2.5 md:w-3 md:h-3 text-gray-400 group-hover:text-blue-500 transition-colors" />
         </button>
